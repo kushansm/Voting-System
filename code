@@ -1,0 +1,16 @@
+candidates={"c1":0,"c2":0,"c3":0}
+unacceptable=0
+voters=[1001,1002,1003,1004,1005,1006,1007,1008,1009,1010]
+
+for voter in voters:
+    vote=input(f"registeration number {voter}- vote for(c1,c2,c3): ").lower()
+    
+    if vote in candidates:
+        candidates[vote]=candidates[vote]+1
+        
+    else:
+        unacceptable=unacceptable+1
+        
+
+print(candidates)
+print(unacceptable)
